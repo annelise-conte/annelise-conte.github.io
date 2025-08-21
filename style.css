@@ -1,0 +1,48 @@
+h1{
+    color:green;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background-color: lightblue;
+}
+
+body{
+    background-image: url("images/cake1.png");
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#paral{
+    text-align: center;
+    color: red;
+}
+
+.center{
+    text-align: center;
+    color: red;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-text{
+    flex: 1;
+}
+
+.profile-photo{
+    width; 60%;
+    border-radius: 8px;
+}
