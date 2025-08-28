@@ -8,7 +8,7 @@
 
 /* ---------- 1) CSS Reset / Base ----------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
 *, *::before, *::after {
   box-sizing: border-box;   /* Include padding & border in total size for all elements + pseudo-elements */
@@ -36,8 +36,8 @@ img {
   --shadow: 0 4px 12px rgba(0,0,0,0.08);    /* Subtle shadow for depth */
   --spacing: 16px;         /* base spacing unit */
   --maxw: 1100px;          /* content width */
-  --font-body: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;  /* Body font */
-  --font-head: "Outfit", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;   /* Headings font */
+  --font-body: "Questrial", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;  /* Body font */
+  --font-head: "Questrial", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;   /* Headings font */
 }
 
 /* ---------- 3) Page Defaults --------------- */
@@ -58,19 +58,22 @@ main {
 
 /* ---------- 4) Typography ------------------ */
 h1 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  /* Uses heading font */
+  font-family: var(--font-head);  /* Uses heading font */
+  font-weight: 900;
   line-height: 1;                 /* Tight line spacing for headings */
   margin: 0 0 0.6em;              /* Space below headings */
   color: var(--brand);            /* Brand colour */
 }
 h2 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  /* Uses heading font */
+  font-family: var(--font-head);  /* Uses heading font */
+  font-weight: 900;
   line-height: 1;                 /* Tight line spacing for headings */
   margin: 0 0 0.6em;              /* Space below headings */
   color: var(--brand);            /* Brand colour */
 }
 h3 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  /* Uses heading font */
+  font-family: var(--font-head);  /* Uses heading font */
+  font-weight: 900;
   line-height: 1;                 /* Tight line spacing for headings */
   margin: 0 0 0.6em;              /* Space below headings */
   color:#260101;            /* Brand colour */
@@ -176,7 +179,13 @@ nav a:focus-visible {
   gap: 20px;                      /* Adds 20px of space between text and image */
 }
 .profile-text {
-  flex: 1;                        /* Allows the text section to grow and fill available space */
+  flex: 1;
+  background: var(--surface);  
+  border: 1px solid #A64E46;         /* Light background for section */
+  border-radius: var(--radius);         /* Rounded corners */
+  padding: calc(var(--spacing) * 1.25); /* Internal spacing */
+  margin: 18px 0;                       /* Vertical spacing */
+  box-shadow: var(--shadow);            /* Subtle shadow */                        /* Allows the text section to grow and fill available space */
 }
 .profile-photo {
   display: block;                 /* Makes the image behave like a block element (so margin works) */
@@ -204,7 +213,7 @@ table {
   width: 100%;                /* Table spans full width */
   border-collapse: collapse;  /* Removes double borders */
   margin-top: 10px;           /* Space above table */
-  font-family: Arial, sans-serif;     /* Table font */
+  font-family: var(--font-body);     /* Table font */
 }
 th, td {
   border: 1px solid #260101;   /* Light grey cell borders */
@@ -254,6 +263,24 @@ th {
 }
 .project-card p{
   margin: 0;                                          /*No random spacing*/
+}
+.socials-section {
+  display: flex;
+  gap: 40px;              /* space between the two blocks */
+  justify-content: left; /* center the blocks horizontally */
+  margin-top: 20px;
+}
+
+.social-block {
+  text-align: center;      /* center text (headings) */
+}
+
+.social-block img {
+  display: block;         
+  margin-left: auto;      
+  margin-right: auto;     
+  width: 35px;            
+  height: auto;           
 }
 
 /* ---------- 8) Cards / Gallery ------------- */

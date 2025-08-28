@@ -21,7 +21,9 @@
                 <li><a href="teaching.html">Teaching Practice</a></li>
                 <li><a href="projects.html">Project Showcase</a></li>
                 <li><a href="worksamples.html">Samples of Work</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a class="active" href="contact.html">Contact Me</a></li>
                 
             </ul>
         </div>
@@ -29,12 +31,48 @@
 
     <!--This is the main content area for my page, in line with Semantic HTML -->
     <main>
-        <section>
-            <p>If you would like to get in touch, please contact me via email:</p>
-            <p>
-                <a href="annelise.conte@myacu.edu.au">annelise.conte@myacu.edu.au</a>
-            </p>
+        <!--This is the section for....-->
+        <section class="section">
+            <h2>Get In Touch With Me!</h2>
+            <form id="contact-form" action="#" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Your Details</legend>
+                    <!--Text Input for Full Name below-->
+                    <label for="name">Full Name</label>
+                    <input id="name" name="name" type="text" placeholder="First & Last Name Here" required minlength="6"
+                    autocomplete="name">
+                    <!--Text Input for Email Address below-->
+                    <label for="email">Email Address</label>
+                    <input id="email" name="emaail" type="email" placeholder="name@example.com" required autocomplete="email">
+                    <!--Text Input for any messages below-->
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" type="message" placeholder="How can I help?" required min length="8"></textarea>
+                    <!--Anti-spam field below-->
+                    <input type="text" name="honey" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;">
+                    <!--This is a button tag used for any input put into the above sections, in line with Semantic HTML-->
+                    <button type="submit">Send</button>
+
+                </fieldset>
+            </form>
         </section>
+        <!--This section is for links to socials-->
+        <section class="section">
+            <h2>Add Me on Socials!</h2>
+            <article class="socials-section">
+                <div class="social-block"> 
+                    <h3>LinkedIn</h3>
+                    <a href="www.linkedin.com/in/annelise-conte-0875ab2b9" target="_blank" rel="noopener noreferrer">
+                    <img src="images/linkedinlogo.png" alt="Connect with me on LinkedIn">
+                    </a>
+                </div>
+                <div class="social-block">
+                    <h3>Email</h3>
+                    <a href="mailto:annelise.conte@myacu.edu.au">
+                    <img src="images/email.png" alt="Send me an email" ></a>
+                </div>
+            </article>
+        </section>
+
     </main>
 
     <!--Footer in line with Semantic HTML-->
