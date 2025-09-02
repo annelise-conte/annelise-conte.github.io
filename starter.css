@@ -283,6 +283,22 @@ th {
   height: auto;           
 }
 
+.video-container {
+  position: relative;
+  width: min(100%, 800px); /* don’t let it grow beyond 800px */
+  margin: 0 auto;          /* center horizontally */
+  padding-top: 56.25%;     /* 16:9 aspect ratio (9/16 = 0.5625) */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 /* ---------- 8) Cards / Gallery ------------- */
 .card-grid {
   display: grid;                                                  /* Grid layout */
@@ -386,6 +402,12 @@ footer .container {
   margin-left: auto;            /* Auto left margin helps center horizontally */
   margin-right: auto;           /* Auto right margin completes horizontal centering */
   width: 40%;                   /* Scale image to 40% of its container’s width */
+}
+.video-center{
+  display: block;               /* Make the image a block element so margins can take effect */
+  margin-left: auto;            /* Auto left margin helps center horizontally */
+  margin-right: auto;           /* Auto right margin completes horizontal centering */
+  width: 56.25%;                   /* Scale image to 100% of its container’s width */
 }
 .m-0 { 
   margin: 0 !important;         /* Removes margin */
