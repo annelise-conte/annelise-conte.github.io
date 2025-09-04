@@ -191,7 +191,7 @@ nav a:focus-visible {
   display: block;                 /* Makes the image behave like a block element (so margin works) */
   margin-left: auto;              /* Centres the image horizontally */
   margin-right: auto;             /* Centres the image horizontally */
-  width: 20%;                     /* Limits the image width to 35% of its container */
+  width: 30%;                     /* Limits the image width to 35% of its container */
   border-radius: 8px;             /* Rounds the corners of the image slightly */
 }
 .main-photo { 
@@ -206,9 +206,7 @@ nav a:focus-visible {
   height: auto;           /* Maintains aspect ratio */
   padding-bottom: 25px;   /* Space below image so text isn’t too close */
 }
-.embed-video {
-  padding-bottom: 25px;
-}
+
 table {
   width: 100%;                /* Table spans full width */
   border-collapse: collapse;  /* Removes double borders */
@@ -236,20 +234,15 @@ th {
   align-items: stretch;         /* Size flex boxes to be the same*/
 }
 .project-card{
-  flex: 1 1 350px;                                    /*Responsive card width*/
+  flex: 1 1 300px;                                    /*Responsive card width*/
   background-color: #D97E6A;                        /* Pinkish-red background */
   border: 2px solid #260101;                        /* Dark border */
-  font-size: 1.1rem;                                  /*font size*/
   padding: 15px;                                      /* Space inside card */
   border-radius: 8px;                                 /* Rounded corners */
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);       /* Soft shadow */
-  width: 250px;                                       /*Photo size*/
-  min-height: 350px;                                  /*Equal card height*/
-  justify-content: space-between;                            /*Photo alignment*/
-  text-align: center;                                 /*Text alignment*/
 }
 .project-card img{
-  max-width: 200px;                                   /* Image fills card width */
+  width: 100%;                                        /* Image fills card width */
   height: auto;                                       /* Maintains aspect ratio */
   border-radius: 4px;                                 /* Slightly rounded image corners */
   margin-bottom: 10px;
@@ -283,19 +276,20 @@ th {
   height: auto;           
 }
 
+.video-embed {
+  width: 560;
+  height: 315;
+}
 .video-container {
-  position: relative;
+  position: absolute;
   width: min(100%, 800px); /* don’t let it grow beyond 800px */
   margin: 0 auto;          /* center horizontally */
   padding-top: 56.25%;     /* 16:9 aspect ratio (9/16 = 0.5625) */
 }
 
 .video-container iframe {
-  position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   border: none;
 }
 
