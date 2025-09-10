@@ -255,7 +255,8 @@ th {
   color:#260101;                                    /* Dark brown colour */
 }
 .project-card p{
-  margin: 0;                                          /*No random spacing*/
+  margin: 0;                                         /*No random spacing*/
+  text-align: center;
 }
 .socials-section {
   display: flex;
