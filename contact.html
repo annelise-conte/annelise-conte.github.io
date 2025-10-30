@@ -1,85 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Annelise Conte's Teaching Portfolio - Contact Me</title>
-     <link rel="stylesheet" href="starter.css">
-</head>
-<body>
-    <!-- This is the main heading for my page in line with Semantic HTML--> 
-    <header>
-        <h1>Contact Me</h1>
-    </header>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Annelise Conte's Teacher Portfolio - About</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-    <!--Navigation Menu in line with Semantic HTML-->
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="teaching.html">Teaching Practice</a></li>
-                <li><a href="projects.html">Project Showcase</a></li>
-                <li><a href="worksamples.html">Samples of Work</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a class="active" href="contact.html">Contact Me</a></li>
-                
-            </ul>
-        </div>
-    </nav>
+		<!-- Sidebar -->
+		<section id="sidebar">
+			<div class="inner">
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="teachingphilosophy.html">Teaching</a></li>
+						<li><a href="resume.html">Resume</a></li>
+						<li><a href="contact.html" class="active">Contact Me</a></li>
+						<li><a href="reflections.html">Reflections</a></li>
+						<li><a href="resources.html">Resources</a></li>
+						<li><a href="worksamples.html">Samples of Work</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
 
-    <!--This is the main content area for my page, in line with Semantic HTML -->
-    <main>
-        <!--This is the section for....-->
-        <section class="section">
-            <h2>Get In Touch With Me!</h2>
-            <form id="contact-form" action="https://formsubmit.co/02d61af76b43242c64b7f39267567db6" method="post" autocomplete="on">
-                <fieldset>
-                    <legend>Your Details</legend>
-                    <!--Text Input for Full Name below-->
-                    <label for="name">Full Name</label>
-                    <input id="name" name="name" type="text" placeholder="First & Last Name Here" required minlength="6"
-                    autocomplete="name">
-                    <!--Text Input for Email Address below-->
-                    <label for="email">Email Address</label>
-                    <input id="email" name="emaail" type="email" placeholder="name@example.com" required autocomplete="email">
-                    <!--Text Input for any messages below-->
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" type="message" placeholder="How can I help?" required min length="8"></textarea>
-                    <!--Anti-spam field below-->
-                    <input type="text" name="honey" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;">
-                    <!--This is a button tag used for any input put into the above sections, in line with Semantic HTML-->
-                    <button type="submit">Send</button>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-                </fieldset>
-            </form>
-        </section>
-        <!--This section is for links to socials-->
-        <section class="section">
-            <h2>Add Me on Socials!</h2>
-            <article class="socials-section">
-                <div class="social-block"> 
-                    <h3>LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/annelise-conte-0875ab2b9" target="_blank" rel="noopener noreferrer">
-                    <img src="images/linkedinlogo.png" alt="Connect with me on LinkedIn">
-                    </a>
-                </div>
-                <div class="social-block">
-                    <h3>Email</h3>
-                    <a href="mailto:annelise.conte@myacu.edu.au">
-                    <img src="images/email.png" alt="Send me an email" ></a>
-                </div>
-            </article>
-        </section>
+			</div>
 
-    </main>
+			<!-- Main Section (matches homepage layout) -->
+			<section id="main" class="wrapper style1 fade-up">
+				<div class="inner">
+					<h1>Contact Me</h1>
+					<p>This is where your content goes.</p>
+				</div>
+			</section>
 
-    <!--Footer in line with Semantic HTML-->
-    <footer>
-        <div class="container">
-            <p> &copy; 2025 Annelise Conte. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
+		</div> <!-- ✅ close wrapper before footer -->
+
+		<!-- Footer -->
+		<footer id="footer" class="wrapper style1-alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; 2025 Annelise Conte. All rights reserved.</li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		
+	</body>
 </html>
