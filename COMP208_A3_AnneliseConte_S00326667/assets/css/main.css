@@ -3526,6 +3526,7 @@ textarea {
 /* --- About Page Layout --- */
 .about-container {
   display: flex;
+  flex-direction: coloumn; /*Stacks images vertically*/
   align-items: flex-start;
   justify-content: center;
   gap: 2em;
